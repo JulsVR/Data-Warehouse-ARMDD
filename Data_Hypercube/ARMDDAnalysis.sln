@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ARMDDAnalysis", "ARMDDAnalysis\ARMDDAnalysis.dwproj", "{9E006741-4FAB-459E-A113-E4FEA4D7499B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E006741-4FAB-459E-A113-E4FEA4D7499B}.Development|Default.ActiveCfg = Development
+		{9E006741-4FAB-459E-A113-E4FEA4D7499B}.Development|Default.Build.0 = Development
+		{9E006741-4FAB-459E-A113-E4FEA4D7499B}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA17B2FC-D51E-4D38-9511-D7B7C32C4EBF}
+	EndGlobalSection
+EndGlobal

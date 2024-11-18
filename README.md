@@ -1,2 +1,4 @@
 # Data-Warehouse-ARMDD
-This project consists in the development of a Data Warehouse with sales data from a company called Bikes &amp; Bikes, made in Microsoft Visual Studio with SSIS.
+This project consists in the development of a Data Warehouse with sales data from a company called Bikes & Bikes. The clients originate from different countries and perform purchases via web, as such, the Data Warehouse had to accommodate for different currencies, and it had to be able to answer advanced analysis inquiries for the business owners.
+To develop the Data Warehouse I had to first design the Dimensional model, where a hypercube would be made from in the end to utilize OLAP's benefits (Drill down, slice, dice) and perform advanced data reporting.
+Both the legacy system and data modelling images can be found in this repository, alongside the all other components that culminated into the creation of the Data Warehouse.

@@ -1,0 +1,43 @@
+IF NOT EXISTS (SELECT name FROM sys.tables WHERE name = 'FactSales')	
+	CREATE TABLE [dbo].[FactSales](
+		[OrderDateKey] [int] NOT NULL, 
+		[DueDateKey] [int] NOT NULL, 
+		[ShipDateKey] [int] NOT NULL, 
+		[CustomerKey] [int] NOT NULL, 
+		[SalesPersonKey] [int] NOT NULL, 
+		[TerritoryKey] [int] NOT NULL, 
+		[BillToAddressKey] [int] NOT NULL, 
+		[ShipToAddressKey] [int] NOT NULL, 
+		[ShipMethodKey] [int] NOT NULL, 
+		[ProductKey] [int] NOT NULL, 
+		[CurrencyKey] [int] NOT NULL,
+		[SalesOrderID] [int] NOT NULL, 
+		[SalesOrderDetailID] [int] NOT NULL, 
+		[OrderQuantity] [smallint] NOT NULL, 
+		[UnitPriceLocal] [money] NOT NULL, 
+		[UnitPriceStd] [money] NOT NULL, 
+		[DiscountPct] [smallmoney] NOT NULL, 
+		[DiscountFlatLocal] [money] NOT NULL, 
+		[DiscountFlatStd] [money] NOT NULL, 
+		[SubTotalLocal] [money] NOT NULL, 
+		[SubTotalStd] [money] NOT NULL, 
+		[TaxLocal] [money] NOT NULL, 
+		[TaxStd] [money] NOT NULL, 
+		[FreightLocal] [money] NOT NULL, 
+		[FreightStd] [money] NOT NULL, 
+		[TotalDueLocal] [money] NOT NULL, 
+		[TotalDueStd] [money] NOT NULL, 
+	 CONSTRAINT [PK_FactSales] PRIMARY KEY CLUSTERED 
+	(
+		[OrderDateKey] ASC,
+		[DueDateKey] ASC,
+		[ShipDateKey] ASC,
+		[CustomerKey] ASC,
+		[SalesPersonKey] ASC,
+		[TerritoryKey] ASC,
+		[BillToAddressKey] ASC,
+		[ShipToAddressKey] ASC,
+		[ShipMethodKey] ASC,
+		[ProductKey] ASC
+	)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+	) ON [PRIMARY]
